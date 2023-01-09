@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import InfiniteLoop from './components/inifinite-loop';
+import Logo01 from './assets/logo-01.png';
+import Logo02 from './assets/logo-02.png';
+import Logo03 from './assets/logo-03.png';
+import Logo04 from './assets/logo-04.png';
+import Logo05 from './assets/logo-05.png';
+import Logo06 from './assets/logo-06.png';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <InfiniteLoop>
+        <img src={Logo01} />
+        <img src={Logo02} />
+        <img src={Logo03} />
+        <img src={Logo04} />
+        <img src={Logo05} />
+        <img src={Logo06} />
+      </InfiniteLoop>
     </div>
   );
 }
